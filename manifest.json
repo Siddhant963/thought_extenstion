@@ -1,0 +1,16 @@
+
+  {
+    "manifest_version": 3,
+    "name": "thought_extenstion",
+    "version": "1.0",
+    "description": "Displays a greeting and motivational quote on your new tab page.",
+    "permissions": ["activeTab"],
+    "content_scripts": [
+      {
+        "matches": ["https://www.google.com/_/chrome/newtab*"],
+        "js": ["script.js"],
+        "css": ["style.css"]
+      }
+    ]
+  }
+  
